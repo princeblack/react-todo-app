@@ -9,6 +9,7 @@
   text-align: center;
 }
 .nav-app{
+  width: 50%;
   .app-title{
     color: rgb(231, 157, 60);
     font-size: 60px;
@@ -21,11 +22,12 @@
 }
 .main-container{
   text-align: center;
+  width: 50%;
 }
 .form-container{
   margin-top: 10px;    
   .input-form{
-    width:400px;
+    width:500px;
     height: 30px;
     border-radius: 10px;
     margin-right: 5px;
