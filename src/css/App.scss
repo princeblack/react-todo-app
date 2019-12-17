@@ -1,4 +1,76 @@
+*,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  background-color: #2d444b;
   text-align: center;
-  background-color: #61dafb;
+}
+.nav-app{
+  .app-title{
+    color: rgb(231, 157, 60);
+    font-size: 60px;
+   }
+   .logo{
+     width: 60px;
+     margin-left: 10px;
+     font-size: 5px;
+   }
+}
+.main-container{
+  text-align: center;
+}
+.form-container{
+  margin-top: 10px;    
+  .input-form{
+    width:400px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  .submit-button{
+    height: 30px;
+    width: 60px;
+    font-size: 100%;
+    background-color: rgb(228, 127, 87);
+    border-radius: 20px;
+  }
+}
+.todo-container{
+  border: rgb(231, 157, 60) 5px solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  h5{
+    color: whitesmoke;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+}
+.todones-container{
+  border: rgb(231, 157, 60) 5px solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  h5{
+    color: whitesmoke;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+}
+.item{
+  background-color: rgb(203, 224, 224);
+  border: black solid 1px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  p{
+    font-size: 20px;
+  }
+  button{
+    height: 30px;
+    width: 60px;
+    background-color: rgb(228, 127, 87);
+    border-radius: 20px;
+  }
 }
