@@ -2,10 +2,8 @@ import React from 'react';
 import ToDoItem from './ToDoItem';
 
 class ToDosContainer extends React.Component {
-
-
-  updateItem = id => {
-    this.props.updateFromChild(id);
+  updateItem = item => {
+    this.props.updateFromChild(item);
   };
 
   render() {
@@ -14,7 +12,7 @@ class ToDosContainer extends React.Component {
     const todoItems = data.map(el => {
       return (
         <ToDoItem
-          key={el.id}
+          key={el._id}
           data={el}
           handleUpdate={this.updateItem}
         ></ToDoItem>
@@ -33,5 +31,4 @@ class ToDosContainer extends React.Component {
     );
   }
 }
-
 export default ToDosContainer;
