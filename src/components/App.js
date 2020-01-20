@@ -3,7 +3,7 @@ import '../css/App.scss';
 import Navigation from '../components/Navigation';
 import MainContainer from '../components/MainContainer';
 
-function App() {
+const App =() =>{
   return (
     <div className="App">
       <Navigation/>

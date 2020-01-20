@@ -1,14 +1,33 @@
 import React from 'react';
 
-function FormContainer() {
-  return (
-    <div className="form-container">
-      <form>
-        <input type="text" className="input-form"></input>
-        <input type="submit" value="submit" className="submit-button"></input>
-      </form>
-    </div>
-  );
+class FormContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});    
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+  render() {
+    return (
+      <div className="form-container">
+        <form onSubmit={this.handleSubmit} >
+          <input type="text" value={this.state.value} onChange={this.handleChange} className="input-form" ></input>
+          <input type="submit" value="submit" className="submit-button"></input>
+        </form>
+      </div>
+    );
+  }
 }
+ 
+
 
 export default FormContainer;

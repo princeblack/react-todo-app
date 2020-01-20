@@ -7,10 +7,10 @@
 .App {
   background-color: #2d444b;
   text-align: center;
+  height: 100vh;
 }
 .nav-app{
-  width: 50%;
-  .app-title{
+display: flex;  .app-title{
     color: rgb(231, 157, 60);
     font-size: 60px;
    }
@@ -22,56 +22,83 @@
 }
 .main-container{
   text-align: center;
-  width: 50%;
+  .todos-container{
+    margin-top: 10px;
+    width: 300px;
+    .todos{
+      border: rgba(231, 157, 60, 0.534) 5px solid;
+      border-radius: 10px;
+    }
+    h5{
+      color: whitesmoke;
+      font-size: 30px;
+      text-decoration: underline;
+    }
+    .item{
+      background-color: rgb(203, 224, 224);
+      border: black solid 1px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      p{
+        font-size: 20px;
+      }
+      button{
+        height: 30px;
+        width: 60px;
+        background-color: rgba(228, 127, 87, 0.692);
+        border-radius: 20px;
+        border: 0;
+      }
+    }
+  }
+  .todones-container{
+    width: 300px;
+    margin-top: 10px;
+    .todones{
+      border: rgba(231, 157, 60, 0.534) 5px solid;
+      border-radius: 10px;
+    }
+    h5{
+      color: whitesmoke;
+      font-size: 30px;
+      text-decoration: underline;
+    }
+    .item{
+      background-color: rgb(203, 224, 224);
+      border: black solid 1px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      p{
+        font-size: 20px;
+      }
+      button{
+        height: 30px;
+        width: 60px;
+        background-color: rgba(228, 127, 87, 0.692);
+        border-radius: 20px;
+        border: 0;
+      }
+    }
+  }
 }
 .form-container{
+  display: flex;
   margin-top: 10px;    
   .input-form{
-    width:500px;
     height: 30px;
     border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
     margin-right: 5px;
   }
   .submit-button{
     height: 30px;
     width: 60px;
     font-size: 100%;
-    background-color: rgb(228, 127, 87);
-    border-radius: 20px;
-  }
-}
-.todo-container{
-  border: rgb(231, 157, 60) 5px solid;
-  border-radius: 10px;
-  margin-top: 10px;
-  h5{
-    color: whitesmoke;
-    font-size: 30px;
-    text-decoration: underline;
-  }
-}
-.todones-container{
-  border: rgb(231, 157, 60) 5px solid;
-  border-radius: 10px;
-  margin-top: 10px;
-  h5{
-    color: whitesmoke;
-    font-size: 30px;
-    text-decoration: underline;
-  }
-}
-.item{
-  background-color: rgb(203, 224, 224);
-  border: black solid 1px;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  p{
-    font-size: 20px;
-  }
-  button{
-    height: 30px;
-    width: 60px;
+    border: none;
     background-color: rgb(228, 127, 87);
     border-radius: 20px;
   }

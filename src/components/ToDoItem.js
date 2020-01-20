@@ -1,12 +1,21 @@
+ 
 import React from 'react';
 
-function ToDoItem() {
+const ToDoItem = props => {
+  function updateItem(e) {
+    e.preventDefault();
+    const id = props.data.id;
+    props.handleUpdate(id);
+  }
+
   return (
     <div className="item">
-      <p>Clean your face</p>
-      <button>CHECK</button>
+      <p>{props.data.text}</p>
+      <button className="btn" onClick={updateItem}>
+        {props.data.status ? '↻' : '✓'}
+      </button>
     </div>
   );
-}
+};
 
 export default ToDoItem;
