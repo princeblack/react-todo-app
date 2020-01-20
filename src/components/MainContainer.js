@@ -46,7 +46,6 @@ class MainContainer extends React.Component {
     const data = this.state.items;
     const todos = data.filter(el => !el.status);
     const todones = data.filter(el => el.status);
-    // const todos = data.filter(el => {if (!el.status) return el;});
     return (
       <main className="main-container">
         <FormContainer AddTodo ={this.handleAddTodo}></FormContainer>
